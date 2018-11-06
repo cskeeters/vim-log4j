@@ -1,0 +1,20 @@
+*log4j.txt* Plugin for added log4j configuration to log4j.properties
+
+This plugin enables the user to add logging configuration for the class in the
+current buffer into the log4j.properties file.  The file must be named
+log4j.properties exactly and must exist in an folder below the currnet working
+folder.
+
+Commands:
+Log4jDebug
+	Will configure log4j to log at the DEBUG level for the class in the currnet buffer.
+Log4jInfo
+	Will configure log4j to log at the INFO  level for the class in the currnet buffer.
+Log4jWarn
+	Will configure log4j to log at the WARN  level for the class in the currnet buffer.
+Log4jError
+	Will configure log4j to log at the ERROR level for the class in the currnet buffer.
+
+						*log4j_credit*
+Javadoc was developed by Chad Skeeters <github.com/cskeeters>.
+Distributed under Vim's |license|.
