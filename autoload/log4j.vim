@@ -22,9 +22,9 @@ function! log4j#get_class_name()
     let lineno = 1
     while lineno <= maxLines
         let text = getline(lineno)
-        let m = matchlist(text, 'class \([^ ]*\)')
+        let m = matchlist(text, '\v^([^/*]*) class ([^ ]*)')
         if len(m) > 0
-            return m[1]
+            return m[2]
         endif
 
         let lineno += 1
